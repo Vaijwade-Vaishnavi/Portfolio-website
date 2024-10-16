@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaish - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 22);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(13, 13, 61);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(183, 183, 237);
+            font-size: 1.01rem;
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+
+
+        }
+
+        .purple {
+            color: rgb(154, 76, 227);
+        }
+
+        #element {
+            color: rgb(154, 76, 227);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .text-gray{
+            color: gray;
+        }
+        .secondsection .box{
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+        .img-top{
+            width: 23px;
+            position: relative;
+            top:-32px;
+            left: -9px;
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+
+        }
+        .vertical-desc{
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vaish's Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">
+                            Home
+                        </a></li>
+                    <li><a href="/">
+                            About
+                        </a></li>
+                    <li> <a href="/">
+                            Services
+                        </a></li>
+                    <li><a href="/">
+                            Projects
+                        </a></li>
+                    <li><a href="/">
+                            Contact Me
+                        </a></li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Vaish</span>
+                <div>and I am a passionate </div>
+                <div>Web Developer</div><span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="png.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class=" secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+            <div class="vertical">
+                <img  class="img-top"src="dev.png" alt="">
+                <div class="vertical-title">
+                    HTML Developer (2010-2012)
+                </div>
+                <div class="vertical-desc">
+                   ......
+                </div>
+            </div>
+
+            
+                <div class="vertical">
+                    <img  class="img-top"src="dev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                       ......
+                    </div>
+                
+
+                
+                 <div class="vertical">
+                        <img  class="img-top"src="dev.png" alt="">
+                        <div class="vertical-title">
+                            HTML Developer (2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                           ......
+                     </div>
+                    
+
+                    
+                    <div class="vertical">
+                            <img  class="img-top"src="dev.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer (2010-2012)
+                            </div>
+                            <div class="vertical-desc">
+                               ......
+                        </div>
+                        
+                        <div class="vertical">
+                            <img  class="img-top"src="dev.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer (2010-2012)
+                            </div>
+                            <div class="vertical-desc">
+                               ......
+                            </div>
+            
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
